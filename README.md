@@ -1,4 +1,5 @@
 # Terminal-Cheat-Sheet-Salim
+# Terminal Cheat Sheet
 
 pwd         # print working directory
 ls          # list files in directory
@@ -19,6 +20,9 @@ rmd         # permanently delete file
 rmdir       # remove directory
 
 
+
+
+
 ## Working with Git
 
 ### Quick Start
@@ -33,8 +37,11 @@ git push origin :<branchname>	# deletes remote branch
 
 git subtree push --prefix docs origin gh-pages  # push docs as subtree to gh-pages
 
+
+
 ### Clone Directory
 git clone <url>
+
 
 
 ### Create Project
@@ -65,6 +72,7 @@ git push origin :<branchname>	# deletes remote branch
 git remote prune <branchname>	# update local/remote sync
 
 
+
 ### Merging Upstream
 
 git remote -v 									# Get list of remote branches
@@ -78,9 +86,11 @@ git merge upstream/development					# Merge original with fork
 git diff --name-only | uniq | xargs subl		# Fix conflicts in Sublime Text
 
 
+
 ### Importing Patches
 git apply < ../p/foo.patch
 git commit -a
+
 
 
 ### Exporting Patches
@@ -89,6 +99,8 @@ git commit -a -m "commit message"
 git format-patch HEAD^  # creates 0001-commit-message.txt
                         # (HEAD^ means every patch since one revision before the
                         # tip of the branch, also known as HEAD)
+
+
 
 
 ### Inspecting Revisions
@@ -139,6 +151,8 @@ git diff origin..master > my.patch  # pipes a diff into my.patch
 git diff --stat HEAD
 
 
+
+
 ## Sublime as default text editor
 cd ~
 mkdir bin
@@ -148,3 +162,5 @@ git config --global core.editor "subl -n -w"
 ### If that's not working
 sudo rm -rf /usr/local/bin/subl
 sudo ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin
+
+
